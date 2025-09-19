@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Haslag - Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #f8fafc;
+            }
+            .hero-gradient {
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            }
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(90deg, #3b82f6, #10b981);
+            }
+        </style>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFEEFFT1V0"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DFEEFFT1V0');
+        </script>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-xl font-bold text-gray-800">Eric Haslag</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition">About</a>
+                    <a href="#work" class="text-gray-600 hover:text-blue-500 transition">Projects</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Code with purpose <br>
+                        <span class="text-gradient">Apps with impact</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        I'm Eric Haslag, an app developer and leader, passionate about turning ideas into meaningful experiences. Whether designing solo or contributing to a team, I focus on building apps that are both
+                        practical and delightful to use.
+                    </p>
+                </div>
+                <div data-aos="fade-left" class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-blue-200 rounded-2xl opacity-50 blur-lg"></div>
+                        <img src="https://huggingface.co/spaces/tigertooth10/personal-site/resolve/main/images/IMG_0406%204.25.01%E2%80%AFPM.jpeg" alt="Eric Haslag (Portrait)" class="relative rounded-2xl shadow-xl w-full max-w-md hovered-element">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-lg text-gray-600 mb-6">
+                        Since 2016, I've been professionally building mobile apps that serve a variety of customers and aim to
+                        bring a little more joy to what they love to do. I started this journey as a contributor on the original
+                        team that built the Garmin Golf iOS app. I eventually transitioned to leadership role and grew that same
+                        team that today serves millions of customers worldwide by supporting dozens of golf products such as the
+                        highly capable Approach S70 smartwatch, the wildly popular Approach R10, and the eye-catching Approach R50.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I specialize in native iOS development, keeping up with the latest advancements in Swift and SwiftUI,
+                        as well as APIs such as SwiftData. I have extensive experience building and maintaining Swift packages
+                        for reliable, reusable, and scalable components, extensions, plugins, and tools that blend clean code
+                        with thoughtful design.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        My approach is simple: model the real world whenever possible, choose the least complex solution that
+                        works, try not to overcomplicate or repeat yourself, and anticipate changing requirements. I often draw
+                        inspiration from hobbies such as golf and music, bringing creativity and passion into my projects.
+                    </p>
+                </div>
+                <div data-aos="fade-left" class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-feather="code" class="text-blue-500"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Swift & SwiftUI</h3>
+                        <p class="text-gray-600">Expertise in Apple's development ecosystem</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-feather="package" class="text-green-500"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Modular Design</h3>
+                        <p class="text-gray-600">Reliable, reusable, and scalable packages</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-feather="users" class="text-purple-500"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Leadership</h3>
+                        <p class="text-gray-600">Technical and personal development</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-feather="music" class="text-yellow-500"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Creativity</h3>
+                        <p class="text-gray-600">Inspiration from arts and hobbies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+
+            <!-- Project Detail View -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-12 transition-all duration-300" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2" id="project-title">Garmin Golf</h3>
+                <p class="text-gray-600 mb-6" id="project-description">I helped build the Garmin Golf app from the ground up, drawing on my own experience as a golfer to shape its features. I\'ve worked on scorekeeping, stat tracking, and offline data persistence, and also developed Live Scoring by syncing data between watch, phone, and server. Along the way I created animated infographics, added features like Bluetooth beacon tracking, and eventually stepped into a lead/project-owner role. This project has given me hands-on experience with many iOS frameworks including UIKit, SwiftUI, Core Data, and SceneKit.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Objective-C</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">SwiftUI</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UIKit</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Core Data</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Core Location</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Core Bluetooth</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">SceneKit</span>
+                </div>
+            </div>
+
+            <!-- macOS-style Dock -->
+            <div class="relative" data-aos="fade-up" data-aos-delay="100">
+                <div >
+                    <div class="flex justify-center space-x-2" id="app-dock">
+                        <div class="app-icon relative" data-project="garmin-golf">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/5a/c1/285ac1be-2f7b-f0db-15b3-c6ad5a3c9afe/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/540x540bb.jpg" alt="Garmin Golf" class="w-16 h-16 rounded-xl object-cover transition-transform hover:scale-110">
+                            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-2 h-2 bg-gray-600 rounded-full opacity-0 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="app-icon relative" data-project="clockwork">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/75/66/69756635-2cac-dbe8-8df8-2341871ac487/AppIcon-0-1x_U007epad-0-1-85-220-0.png/540x540bb.jpg" alt="Clockwork: Time Tracker" class="w-16 h-16 rounded-xl object-cover transition-transform hover:scale-110">
+                            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-2 h-2 bg-gray-600 rounded-full opacity-0 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="app-icon relative" data-project="winlit">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/bb/28/9f/bb289f7b-6085-772e-139c-496129230718/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/540x540bb.jpg" alt="Winlit" class="w-16 h-16 rounded-xl object-cover transition-transform hover:scale-110">
+                            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-2 h-2 bg-gray-600 rounded-full opacity-0 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="app-icon relative" data-project="dice-out">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b5/71/7b/b5717bbb-879b-e424-92a8-7922b30bc6d3/AppIcon-1x_U007epad-0-P3-85-220-0.png/540x540bb.jpg" alt="Dice Out" class="w-16 h-16 rounded-xl object-cover transition-transform hover:scale-110">
+                            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-2 h-2 bg-gray-600 rounded-full opacity-0 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="app-icon relative" data-project="miney-mo">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ea/66/86/ea66867f-1422-f0d9-003f-3e2fc932e267/AppIcon-1x_U007emarketing-85-220-0-6.png/540x540bb.jpg" alt="Miney Mo" class="w-16 h-16 rounded-xl object-cover transition-transform hover:scale-110">
+                            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-2 h-2 bg-gray-600 rounded-full opacity-0 transition-opacity duration-300"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Project dock interaction
+        const projects = {
+            'garmin-golf': {
+                title: 'Garmin Golf',
+                description: 'I helped build the Garmin Golf app from the ground up, drawing on my own experience as a golfer to shape its features. I\'ve worked on scorekeeping, stat tracking, and offline data persistence, and also developed Live Scoring by syncing data between watch, phone, and server. I also created animated infographics, added features like Bluetooth beacon tracking, and eventually stepped into a lead/project-owner role. This project has given me hands-on experience with many iOS frameworks including UIKit, Core Data, and SceneKit.',
+                tags: ['Swift', 'Objective-C', 'SwiftUI', 'UIKit', 'Core Data', 'Core Location', 'Core Bluetooth', 'SceneKit']
+            },
+            'clockwork': {
+                title: 'Clockwork: Time Tracker',
+                description: 'Clockwork is my latest solo project to reach the App Store. I started it after my daughter was born, when I wanted a simple way to log work hours and ensure I was meeting my employer\'s expectations. I tried other apps, but many were cluttered with ads, arbitrary paywall restrictions, or clunky designs, so I decided to make my own. The app is written in Swift and SwiftUI with SwiftData for persistence, and it\'s free to use with no limits or ads. My focus was on creating a clean, accessible design.',
+                tags: ['Swift', 'SwiftUI', 'Swift Data']
+            },
+            'winlit': {
+                title: 'Winlit',
+                description: 'I created Winlit with the help of some friends to make recreational sports scorekeeping simple and fun. Players can track scores on iPhone or Apple Watch, and it includes features like a basketball shot clock that\'s often not available for rec sports. One of the most difficult challenges was synchronizing updates between watch and phone in real time so they appeared instant. It was also my first Watch extension and a good opportunity to experiment with audio engineering.',
+                tags: ['Swift', 'UIKit', 'Core Data', 'Core Audio', 'WatchKit']
+            },
+            'dice-out': {
+                title: 'Dice Out',
+                description: 'Dice Out is a SwiftUI app I built for playing craps tournaments with friends, designed with a twist to keep things unpredictable. After a minimum play time, the app randomizes when the final dice roll happens so no one can rush the clock. I spent time refining the UI to work smoothly across all iPhone sizes, and also made it a Mac Catalyst project. This was my first fully SwiftUI app, where I also explored tools like Xcode Cloud.',
+                tags: ['Swift', 'SwiftUI', 'Swift Data']
+            },
+            'miney-mo': {
+                title: 'Miney Mo',
+                description: 'I joined the Miney Mo project after a friend started it, helping refine the app into a polished tool for group decision-making. Whether it\'s used for choosing teams or settling on options, it makes the process quick and fun. My contributions focused on features like settings and playful sound effects, including a favorite “bubble popping” noise. While lighter than some of my other projects, it reflects my interest in creating fun, interpersonal apps.',
+                tags: ['Swift', 'UIKit', 'Core Audio']
+            },
+        };
+
+        // Select Garmin Golf by default
+        const defaultIcon = document.querySelector('.app-icon[data-project="garmin-golf"]');
+        defaultIcon.querySelector('img').classList.add('scale-110', 'translate-y-[-10px]', 'shadow-md');
+        defaultIcon.querySelector('div').classList.add('opacity-100');
+
+        document.querySelectorAll('.app-icon').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const projectId = icon.getAttribute('data-project');
+                const project = projects[projectId];
+
+                // Remove all active states
+                document.querySelectorAll('.app-icon').forEach(icon => {
+                    icon.querySelector('img').classList.remove('scale-110', 'translate-y-[-10px]', 'shadow-md');
+                    icon.querySelector('div').classList.remove('opacity-100');
+                });
+
+                // Add active state to clicked icon
+                icon.querySelector('img').classList.add('scale-110', 'translate-y-[-10px]', 'shadow-md');
+                icon.querySelector('div').classList.add('opacity-100');
+
+                document.getElementById('project-title').textContent = project.title;
+                document.getElementById('project-description').textContent = project.description;
+
+                const tagsContainer = document.querySelector('.flex.flex-wrap.gap-2');
+                tagsContainer.innerHTML = '';
+                project.tags.forEach(tag => {
+                    const span = document.createElement('span');
+                    span.className = 'px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm';
+                    span.textContent = tag;
+                    tagsContainer.appendChild(span);
+                });
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold">Eric Haslag</h3>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/eric-haslag" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Eric Haslag</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
