@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockwork: Time Tracker | Simple & Powerful Time Tracking</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <style>
+            .hero-gradient {
+                background: linear-gradient(135deg, #00B463 0%, #14994B 100%);
+                animation: gradientShift 15s ease infinite;
+                background-size: 200% 200%;
+            }
+            @keyframes gradientShift {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            .feature-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .app-store-badge {
+                transition: all 0.3s ease;
+            }
+            .app-store-badge:hover {
+                transform: scale(1.05);
+            }
+        </style>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFEEFFT1V0"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DFEEFFT1V0');
+        </script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="https://apps.apple.com/us/app/clockwork-time-tracker/id6748888549?itscg=30200&itsct=apps_box_artwork&mttnsubad=6748888549" style="position: relative; width: 32px; height: 32px; overflow: hidden; display: inline-block; vertical-align: middle; --app-icon-mask: url('data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20viewBox%3D%220%200%20230.5%20230.5%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%221.4%22%20clip-rule%3D%22evenodd%22%20d%3D%22M158.2%20230H64.1a320%20320%200%200%201-7-.1c-5%200-10-.5-15-1.3a50.8%2050.8%200%200%201-14.4-4.8%2048.2%2048.2%200%200%201-21-21%2050.9%2050.9%200%200%201-4.8-14.4%20100.7%20100.7%200%200%201-1.3-15v-7l-.1-8.2V64.1a320%20320%200%200%201%20.1-7c0-5%20.5-10%201.3-15a50.7%2050.7%200%200%201%204.8-14.4%2048.2%2048.2%200%200%201%2021-21%2051%2051%200%200%201%2014.4-4.8c5-.8%2010-1.2%2015-1.3a320%20320%200%200%201%207%200l8.2-.1h94.1a320%20320%200%200%201%207%20.1c5%200%2010%20.5%2015%201.3a52%2052%200%200%201%2014.4%204.8%2048.2%2048.2%200%200%201%2021%2021%2050.9%2050.9%200%200%201%204.8%2014.4c.8%205%201.2%2010%201.3%2015a320%20320%200%200%201%20.1%207v102.3l-.1%207c0%205-.5%2010-1.3%2015a50.7%2050.7%200%200%201-4.8%2014.4%2048.2%2048.2%200%200%201-21%2021%2050.8%2050.8%200%200%201-14.4%204.8c-5%20.8-10%201.2-15%201.3a320%20320%200%200%201-7%200l-8.2.1z%22%2F%3E%0A%3C%2Fsvg%3E%0A');">
+                          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/75/66/69756635-2cac-dbe8-8df8-2341871ac487/AppIcon-0-1x_U007epad-0-1-85-220-0.png/540x540bb.jpg" alt="Clockwork: Time Tracker" style="width: 100%; height: 100%; object-fit: contain; mask-image: var(--app-icon-mask); -webkit-mask-image: var(--app-icon-mask);" />
+                        </a>
+                        <span class="ml-2 text-xl font-bold text-gray-900">Clockwork</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center">
+                    <a href="#features" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-[#14994B]">Features</a>
+                    <a href="#download" class="ml-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#14994B] hover:bg-[#0d7a3a]">Download</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl lg:tracking-tight" data-aos="fade-down">
+                    Every second counts.
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-indigo-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" data-aos="fade-up" data-aos-delay="100">
+                    Clockwork helps you track time spent on projects with beautiful simplicity. Perfect for freelancers, teams, and anyone who values their time.
+                </p>
+                <div class="mt-10 sm:flex sm:justify-center" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <a href="https://apps.apple.com/us/app/clockwork-time-tracker/id6748888549?itscg=30200&itsct=apps_box_badge&mttnsubad=6748888549" style="display: inline-block;">
+                            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1756080000" alt="Download on the App Store" style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Screenshots Carousel -->
+    <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="splide" style="max-width: 1200px; margin: 0 auto;">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="width: 33%; overflow: hidden;">
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Activities%20List.png"
+                                 alt="Activities List"
+                                 class="rounded-lg shadow-xl mx-auto"
+                                 style="width: 100%; height: auto; object-fit: contain;">
+                        </li>
+                        <li class="splide__slide" style="width: 33%; overflow: hidden;">
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Daily%20Stats.png"
+                                 alt="Daily Stats"
+                                 class="rounded-lg shadow-xl mx-auto"
+                                 style="width: 100%; height: auto; object-fit: contain;">
+                        </li>
+                        <li class="splide__slide" style="width: 33%; overflow: hidden;">
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Weekly%20Stats.png"
+                                 alt="Weekly Stats"
+                                 class="rounded-lg shadow-xl mx-auto"
+                                 style="width: 100%; height: auto; object-fit: contain;">
+                        </li>
+                        <li class="splide__slide" style="width: 33%; overflow: hidden;">
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Session%20Details.png"
+                                 alt="Session Details"
+                                 class="rounded-lg shadow-xl mx-auto"
+                                 style="width: 100%; height: auto; object-fit: contain;">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="bg-gray-50 py-12" id="features">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-[#14994B] font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Why choose Clockwork
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                    <!-- Feature 1 -->
+                    <div class="feature-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[#14994B] text-white">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Track Anything</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Work, workouts, study, hobbies — log unlimited activities with ease.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[#14994B] text-white">
+                            <i data-feather="box"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Organize Your Way</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Use colors and icons to make every activity instantly recognizable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[#14994B] text-white">
+                            <i data-feather="bar-chart-2"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">See Your Progress</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Daily and weekly charts show exactly where your time goes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-[#14994B]" id="download">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to take control of your time?</span>
+                <span class="block text-[#a8dfbe]">Download Clockwork today.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0" data-aos="zoom-in">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="https://apps.apple.com/us/app/clockwork-time-tracker/id6748888549?itscg=30200&itsct=apps_box_badge&mttnsubad=6748888549" style="display: inline-block;">
+                        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1756080000" alt="Download on the App Store" style="width: 160px; height: 54px; vertical-align: middle; object-fit: contain;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center">
+                        <a href="https://apps.apple.com/us/app/clockwork-time-tracker/id6748888549?itscg=30200&itsct=apps_box_artwork&mttnsubad=6748888549" style="position: relative; width: 32px; height: 32px; overflow: hidden; display: inline-block; vertical-align: middle; --app-icon-mask: url('data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20viewBox%3D%220%200%20230.5%20230.5%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%221.4%22%20clip-rule%3D%22evenodd%22%20d%3D%22M158.2%20230H64.1a320%20320%200%200%201-7-.1c-5%200-10-.5-15-1.3a50.8%2050.8%200%200%201-14.4-4.8%2048.2%2048.2%200%200%201-21-21%2050.9%2050.9%200%200%201-4.8-14.4%20100.7%20100.7%200%200%201-1.3-15v-7l-.1-8.2V64.1a320%20320%200%200%201%20.1-7c0-5%20.5-10%201.3-15a50.7%2050.7%200%200%201%204.8-14.4%2048.2%2048.2%200%200%201%2021-21%2051%2051%200%200%201%2014.4-4.8c5-.8%2010-1.2%2015-1.3a320%20320%200%200%201%207%200l8.2-.1h94.1a320%20320%200%200%201%207%20.1c5%200%2010%20.5%2015%201.3a52%2052%200%200%201%2014.4%204.8%2048.2%2048.2%200%200%201%2021%2021%2050.9%2050.9%200%200%201%204.8%2014.4c.8%205%201.2%2010%201.3%2015a320%20320%200%200%201%20.1%207v102.3l-.1%207c0%205-.5%2010-1.3%2015a50.7%2050.7%200%200%201-4.8%2014.4%2048.2%2048.2%200%200%201-21%2021%2050.8%2050.8%200%200%201-14.4%204.8c-5%20.8-10%201.2-15%201.3a320%20320%200%200%201-7%200l-8.2.1z%22%2F%3E%0A%3C%2Fsvg%3E%0A');">
+                          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/75/66/69756635-2cac-dbe8-8df8-2341871ac487/AppIcon-0-1x_U007epad-0-1-85-220-0.png/540x540bb.jpg" alt="Clockwork: Time Tracker" style="width: 100%; height: 100%; object-fit: contain; mask-image: var(--app-icon-mask); -webkit-mask-image: var(--app-icon-mask);" />
+                        </a>
+                        <span class="ml-2 text-xl font-bold text-white">Clockwork</span>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Product
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#support" class="text-base text-gray-400 hover:text-white">
+                                        Support
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Legal
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2025 Eric Haslag
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+            feather.replace();
+
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 3,
+                focus: 'center',
+                gap: '1rem',
+                autoplay: true,
+                interval: 3000,
+                pauseOnHover: false,
+                arrows: true,
+                pagination: false,
+                width: '100%',
+                fixedWidth: '300px',
+                trimSpace: false,
+                breakpoints: {
+                    1024: {
+                        perPage: 3,
+                        fixedWidth: '250px'
+                    },
+                    768: {
+                        perPage: 1,
+                        focus: 'center',
+                        gap: '1rem',
+                        fixedWidth: '300px'
+                    }
+                }
+            }).mount();
+        });
+    </script>
+</body>
+</html>
