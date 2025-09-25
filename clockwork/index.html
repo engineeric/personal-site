@@ -7,40 +7,51 @@
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-        <script src="https://unpkg.com/feather-icons"></script>
-        <style>
-            .hero-gradient {
-                background: linear-gradient(135deg, #00B463 0%, #14994B 100%);
-                animation: gradientShift 15s ease infinite;
-                background-size: 200% 200%;
-            }
-            @keyframes gradientShift {
-                0% { background-position: 0% 50%; }
-                50% { background-position: 100% 50%; }
-                100% { background-position: 0% 50%; }
-            }
-            .feature-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            }
-            .app-store-badge {
-                transition: all 0.3s ease;
-            }
-            .app-store-badge:hover {
-                transform: scale(1.05);
-            }
-        </style>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFEEFFT1V0"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #00B463 0%, #14994B 100%);
+            animation: gradientShift 15s ease infinite;
+            background-size: 200% 200%;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .app-store-badge {
+            transition: all 0.3s ease;
+        }
+        .app-store-badge:hover {
+            transform: scale(1.05);
+        }
+        /* Animated mobile menu */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 320ms cubic-bezier(.2,.8,.2,1), opacity 180ms linear;
+        }
+        .mobile-menu.open {
+            max-height: 480px; /* large enough to contain menu */
+            opacity: 1;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFEEFFT1V0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          gtag('config', 'G-DFEEFFT1V0');
-        </script>
+        gtag('config', 'G-DFEEFFT1V0');
+    </script>
 </head>
 <body class="font-sans antialiased text-gray-800">
     <!-- Navigation -->
@@ -52,18 +63,25 @@
                         <a href="https://apps.apple.com/us/app/clockwork-time-tracker/id6748888549?itscg=30200&itsct=apps_box_artwork&mttnsubad=6748888549" style="position: relative; width: 32px; height: 32px; overflow: hidden; display: inline-block; vertical-align: middle; --app-icon-mask: url('data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20viewBox%3D%220%200%20230.5%20230.5%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%221.4%22%20clip-rule%3D%22evenodd%22%20d%3D%22M158.2%20230H64.1a320%20320%200%200%201-7-.1c-5%200-10-.5-15-1.3a50.8%2050.8%200%200%201-14.4-4.8%2048.2%2048.2%200%200%201-21-21%2050.9%2050.9%200%200%201-4.8-14.4%20100.7%20100.7%200%200%201-1.3-15v-7l-.1-8.2V64.1a320%20320%200%200%201%20.1-7c0-5%20.5-10%201.3-15a50.7%2050.7%200%200%201%204.8-14.4%2048.2%2048.2%200%200%201%2021-21%2051%2051%200%200%201%2014.4-4.8c5-.8%2010-1.2%2015-1.3a320%20320%200%200%201%207%200l8.2-.1h94.1a320%20320%200%200%201%207%20.1c5%200%2010%20.5%2015%201.3a52%2052%200%200%201%2014.4%204.8%2048.2%2048.2%200%200%201%2021%2021%2050.9%2050.9%200%200%201%204.8%2014.4c.8%205%201.2%2010%201.3%2015a320%20320%200%200%201%20.1%207v102.3l-.1%207c0%205-.5%2010-1.3%2015a50.7%2050.7%200%200%201-4.8%2014.4%2048.2%2048.2%200%200%201-21%2021%2050.8%2050.8%200%200%201-14.4%204.8c-5%20.8-10%201.2-15%201.3a320%20320%200%200%201-7%200l-8.2.1z%22%2F%3E%0A%3C%2Fsvg%3E%0A');">
                           <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/75/66/69756635-2cac-dbe8-8df8-2341871ac487/AppIcon-0-1x_U007epad-0-1-85-220-0.png/540x540bb.jpg" alt="Clockwork: Time Tracker" style="width: 100%; height: 100%; object-fit: contain; mask-image: var(--app-icon-mask); -webkit-mask-image: var(--app-icon-mask);" />
                         </a>
-                        <span class="ml-2 text-xl font-bold text-gray-900">Clockwork</span>
+                        <a href="./" class="ml-2 text-xl font-bold text-gray-900 hover:text-[#14994B]">Clockwork</a>
                     </div>
                 </div>
-                <div class="hidden md:ml-6 md:flex md:items-center">
-                    <a href="#features" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-[#14994B]">Features</a>
-                    <a href="#download" class="ml-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#14994B] hover:bg-[#0d7a3a]">Download</a>
-                </div>
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-expanded="false">
-                        <i data-feather="menu"></i>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#14994B] focus:outline-none" aria-label="Main menu">
+                        <svg id="menu-open-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        <svg id="menu-close-icon" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>
+                <div class="hidden md:ml-6 md:flex md:items-center">
+                    <a href="./support.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-[#14994B]">Support</a>
+                    <a href="./privacy.html" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-[#14994B]">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-b border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="./support.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Support</a>
+                <a href="./privacy.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Privacy</a>
             </div>
         </div>
     </nav>
@@ -96,27 +114,27 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide" style="width: 33%; overflow: hidden;">
-                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Activities%20List.png"
-                                 alt="Activities List"
-                                 class="rounded-lg shadow-xl mx-auto"
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Activities%20List.png" 
+                                 alt="Activities List" 
+                                 class="rounded-lg shadow-xl mx-auto" 
                                  style="width: 100%; height: auto; object-fit: contain;">
                         </li>
                         <li class="splide__slide" style="width: 33%; overflow: hidden;">
-                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Daily%20Stats.png"
-                                 alt="Daily Stats"
-                                 class="rounded-lg shadow-xl mx-auto"
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Daily%20Stats.png" 
+                                 alt="Daily Stats" 
+                                 class="rounded-lg shadow-xl mx-auto" 
                                  style="width: 100%; height: auto; object-fit: contain;">
                         </li>
                         <li class="splide__slide" style="width: 33%; overflow: hidden;">
-                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Weekly%20Stats.png"
-                                 alt="Weekly Stats"
-                                 class="rounded-lg shadow-xl mx-auto"
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Weekly%20Stats.png" 
+                                 alt="Weekly Stats" 
+                                 class="rounded-lg shadow-xl mx-auto" 
                                  style="width: 100%; height: auto; object-fit: contain;">
                         </li>
                         <li class="splide__slide" style="width: 33%; overflow: hidden;">
-                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Session%20Details.png"
-                                 alt="Session Details"
-                                 class="rounded-lg shadow-xl mx-auto"
+                            <img src="https://huggingface.co/spaces/tigertooth10/clockwork-app/resolve/main/images/Session%20Details.png" 
+                                 alt="Session Details" 
+                                 class="rounded-lg shadow-xl mx-auto" 
                                  style="width: 100%; height: auto; object-fit: contain;">
                         </li>
                     </ul>
@@ -197,6 +215,9 @@
         </div>
     </div>
 
+    <!-- Spacer -->
+    <div class="py-16 bg-gray-50"></div>
+
     <!-- Footer -->
     <footer class="bg-gray-800">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -206,7 +227,7 @@
                         <a href="https://apps.apple.com/us/app/clockwork-time-tracker/id6748888549?itscg=30200&itsct=apps_box_artwork&mttnsubad=6748888549" style="position: relative; width: 32px; height: 32px; overflow: hidden; display: inline-block; vertical-align: middle; --app-icon-mask: url('data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20viewBox%3D%220%200%20230.5%20230.5%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%221.4%22%20clip-rule%3D%22evenodd%22%20d%3D%22M158.2%20230H64.1a320%20320%200%200%201-7-.1c-5%200-10-.5-15-1.3a50.8%2050.8%200%200%201-14.4-4.8%2048.2%2048.2%200%200%201-21-21%2050.9%2050.9%200%200%201-4.8-14.4%20100.7%20100.7%200%200%201-1.3-15v-7l-.1-8.2V64.1a320%20320%200%200%201%20.1-7c0-5%20.5-10%201.3-15a50.7%2050.7%200%200%201%204.8-14.4%2048.2%2048.2%200%200%201%2021-21%2051%2051%200%200%201%2014.4-4.8c5-.8%2010-1.2%2015-1.3a320%20320%200%200%201%207%200l8.2-.1h94.1a320%20320%200%200%201%207%20.1c5%200%2010%20.5%2015%201.3a52%2052%200%200%201%2014.4%204.8%2048.2%2048.2%200%200%201%2021%2021%2050.9%2050.9%200%200%201%204.8%2014.4c.8%205%201.2%2010%201.3%2015a320%20320%200%200%201%20.1%207v102.3l-.1%207c0%205-.5%2010-1.3%2015a50.7%2050.7%200%200%201-4.8%2014.4%2048.2%2048.2%200%200%201-21%2021%2050.8%2050.8%200%200%201-14.4%204.8c-5%20.8-10%201.2-15%201.3a320%20320%200%200%201-7%200l-8.2.1z%22%2F%3E%0A%3C%2Fsvg%3E%0A');">
                           <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/75/66/69756635-2cac-dbe8-8df8-2341871ac487/AppIcon-0-1x_U007epad-0-1-85-220-0.png/540x540bb.jpg" alt="Clockwork: Time Tracker" style="width: 100%; height: 100%; object-fit: contain; mask-image: var(--app-icon-mask); -webkit-mask-image: var(--app-icon-mask);" />
                         </a>
-                        <span class="ml-2 text-xl font-bold text-white">Clockwork</span>
+                        <a href="./" class="ml-2 text-xl font-bold text-white hover:text-[#a8dfbe]">Clockwork</a>
                     </div>
                 </div>
                 <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
@@ -217,7 +238,7 @@
                             </h3>
                             <ul class="mt-4 space-y-4">
                                 <li>
-                                    <a href="#support" class="text-base text-gray-400 hover:text-white">
+                                    <a href="./support.html" class="text-base text-gray-400 hover:text-white">
                                         Support
                                     </a>
                                 </li>
@@ -229,7 +250,7 @@
                             </h3>
                             <ul class="mt-4 space-y-4">
                                 <li>
-                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                    <a href="./privacy.html" class="text-base text-gray-400 hover:text-white">
                                         Privacy Policy
                                     </a>
                                 </li>
@@ -252,7 +273,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             AOS.init();
             feather.replace();
-
+            
             new Splide('.splide', {
                 type: 'loop',
                 perPage: 3,
@@ -279,6 +300,38 @@
                     }
                 }
             }).mount();
+
+            // Animated mobile menu toggle
+            (function(){
+                var mobileButton = document.getElementById('mobile-menu-button');
+                var mobileMenu = document.getElementById('mobile-menu');
+                var openIcon = document.getElementById('menu-open-icon');
+                var closeIcon = document.getElementById('menu-close-icon');
+                var ANIM_MS = 320;
+                if (!mobileButton || !mobileMenu) return;
+
+                mobileButton.addEventListener('click', function() {
+                    var isOpen = mobileMenu.classList.contains('open');
+                    if (isOpen) {
+                        // start close animation
+                        mobileMenu.classList.remove('open');
+                        if (openIcon) openIcon.classList.remove('hidden');
+                        if (closeIcon) closeIcon.classList.add('hidden');
+                        mobileButton.setAttribute('aria-expanded', 'false');
+                        // after animation, hide completely to remove from flow
+                        setTimeout(function(){ mobileMenu.classList.add('hidden'); }, ANIM_MS);
+                    } else {
+                        // reveal and start open animation
+                        mobileMenu.classList.remove('hidden');
+                        // force reflow so transition runs
+                        void mobileMenu.offsetHeight;
+                        mobileMenu.classList.add('open');
+                        if (openIcon) openIcon.classList.add('hidden');
+                        if (closeIcon) closeIcon.classList.remove('hidden');
+                        mobileButton.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            })();
         });
     </script>
 </body>
